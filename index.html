@@ -1,85 +1,303 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vermaur Farms</title>
 
 <style>
-body{
-font-family:Arial;
+*{
 margin:0;
-background:#f8f8f8;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f7f7f7;
+color:#333;
 }
 
 header{
-background:#2e7d32;
+background:#fff;
+padding:15px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.logo{
+height:70px;
+}
+
+nav a{
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+color:#2e7d32;
+}
+
+.hero{
+height:550px;
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url('https://images.unsplash.com/photo-1500382017468-9049fed747ef');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
 color:white;
 padding:20px;
-text-align:center;
 }
 
-.product{
-background:white;
-margin:20px;
-padding:20px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
 }
 
-img{
-width:100%;
-max-width:300px;
+.hero p{
+font-size:22px;
 }
 
 .btn{
 display:inline-block;
+padding:12px 25px;
 background:#25D366;
 color:white;
-padding:10px 20px;
 text-decoration:none;
-border-radius:5px;
+border-radius:8px;
+margin-top:20px;
+font-weight:bold;
+}
+
+.section{
+padding:70px 5%;
+}
+
+.section h2{
+text-align:center;
+color:#2e7d32;
+font-size:38px;
+margin-bottom:40px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:380px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+text-align:center;
+}
+
+.card h3{
+font-size:24px;
+margin-bottom:10px;
+}
+
+.price{
+font-size:22px;
+font-weight:bold;
+color:#2e7d32;
+margin:15px 0;
+}
+
+.about{
+background:white;
+text-align:center;
+line-height:1.8;
+font-size:18px;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.feature{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+footer{
+background:#1b5e20;
+color:white;
+text-align:center;
+padding:35px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
-<h1>Vermaur Farms</h1>
-<p>Natural & Traditional Food Products</p>
+<img src="logo.png" class="logo">
+
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
-<div class="product">
-<h2>Organic Kala Namak Rice</h2>
+<section class="hero" id="home">
+<div>
+<h1>Vermaur Farms</h1>
+<p>Pure Grains • Honest Taste • Traditional Quality</p>
 
-<img src="https://via.placeholder.com/300">
-
-<p>Premium Aromatic Black Rice</p>
-
-<h3>₹199 / Kg</h3>
-
-<a class="btn"
-href="https://wa.me/919999999999">
+<a href="https://wa.me/919120033340" class="btn">
 Order on WhatsApp
 </a>
 </div>
+</section>
 
-<div class="product">
-<h2>Premium Dal Badi</h2>
+<section class="section">
+<h2>Why Choose Vermaur</h2>
 
-<img src="https://via.placeholder.com/300">
+<div class="features">
 
-<p>High Protein Traditional Dal Badi</p>
+<div class="feature">
+<h3>100% Pure</h3>
+<p>Premium quality food products.</p>
+</div>
 
-<h3>₹149 / 400g</h3>
+<div class="feature">
+<h3>Natural Farming</h3>
+<p>Traditional and sustainable sourcing.</p>
+</div>
 
-<a class="btn"
-href="https://wa.me/919999999999">
-Order on WhatsApp
+<div class="feature">
+<h3>Hygienic Packing</h3>
+<p>Carefully packed for freshness.</p>
+</div>
+
+<div class="feature">
+<h3>Trusted Quality</h3>
+<p>Customer satisfaction is our priority.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="products">
+
+<h2>Our Premium Products</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="kala-namak-rice.png">
+
+<div class="card-content">
+<h3>Kala Namak Rice</h3>
+<p>Traditional aromatic rice from Eastern UP.</p>
+<div class="price">₹199 / Kg</div>
+
+<a href="https://wa.me/919120033340" class="btn">
+Order Now
 </a>
 </div>
+</div>
+
+<div class="card">
+<img src="sona-masoori-rice.png">
+
+<div class="card-content">
+<h3>Sona Masoori Rice</h3>
+<p>Light, fluffy and aromatic rice.</p>
+
+<div class="price">₹149 / Kg</div>
+
+<a href="https://wa.me/919120033340" class="btn">
+Order Now
+</a>
+</div>
+</div>
+
+<div class="card">
+<img src="doodh-malai-rice.png">
+
+<div class="card-content">
+<h3>Doodh Malai Rice</h3>
+<p>Rich, creamy and premium taste.</p>
+
+<div class="price">₹179 / Kg</div>
+
+<a href="https://wa.me/919120033340" class="btn">
+Order Now
+</a>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section about" id="about">
+
+<h2>About Vermaur Farms</h2>
+
+<p>
+Vermaur Farms is dedicated to bringing premium quality grains and traditional food products directly to consumers. We focus on purity, freshness, traditional taste and customer satisfaction.
+</p>
+
+</section>
+
+<footer id="contact">
+
+<h2>Contact Us</h2>
+
+<p>📞 +91 9120033340</p>
+<p>🌐 www.vermaur.in</p>
+<p>© 2026 Vermaur Farms. All Rights Reserved.</p>
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919120033340">
+WhatsApp
+</a>
 
 </body>
 </html>
