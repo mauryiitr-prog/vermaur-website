@@ -1,177 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vermaur Farms</title>
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, sans-serif;
-}
-
-body{
-background:#f7f7f7;
-color:#333;
-}
-
-header{
-background:#fff;
-padding:15px 5%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-position:sticky;
-top:0;
-z-index:999;
-}
-
-.logo{
-height:70px;
-}
-
-nav a{
-text-decoration:none;
-margin-left:20px;
-font-weight:bold;
-color:#2e7d32;
-}
-
-.hero{
-height:550px;
-background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-url('https://images.unsplash.com/photo-1500382017468-9049fed747ef');
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-color:white;
-padding:20px;
-}
-
-.hero h1{
-font-size:60px;
-margin-bottom:15px;
-}
-
-.hero p{
-font-size:22px;
-}
-
-.btn{
-display:inline-block;
-padding:12px 25px;
-background:#25D366;
-color:white;
-text-decoration:none;
-border-radius:8px;
-margin-top:20px;
-font-weight:bold;
-}
-
-.section{
-padding:70px 5%;
-}
-
-.section h2{
-text-align:center;
-color:#2e7d32;
-font-size:38px;
-margin-bottom:40px;
-}
-
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
-}
-
-.card{
-background:white;
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,.1);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card img{
-width:100%;
-height:380px;
-object-fit:cover;
-}
-
-.card-content{
-padding:20px;
-text-align:center;
-}
-
-.card h3{
-font-size:24px;
-margin-bottom:10px;
-}
-
-.price{
-font-size:22px;
-font-weight:bold;
-color:#2e7d32;
-margin:15px 0;
-}
-
-.about{
-background:white;
-text-align:center;
-line-height:1.8;
-font-size:18px;
-}
-
-.features{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-text-align:center;
-}
-
-.feature{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 3px 10px rgba(0,0,0,.1);
-}
-
-footer{
-background:#1b5e20;
-color:white;
-text-align:center;
-padding:35px;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-}
-</style>
-</head>
-
-<body>
-
 <header>
+
 <img src="logo.png" class="logo">
 
 <nav>
@@ -180,112 +8,130 @@ font-weight:bold;
 <a href="#about">About</a>
 <a href="#contact">Contact</a>
 </nav>
+
 </header>
 
 <section class="hero" id="home">
 <div>
 <h1>Vermaur Farms</h1>
-<p>Pure Grains • Honest Taste • Traditional Quality</p>
 
-<a href="https://wa.me/919120033340" class="btn">
+<p>
+Premium Rice & Traditional Food Products
+</p>
+
+<a href="https://wa.me/919120033340?text=Hello%20Vermaur%20Farms,%20I%20want%20to%20know%20about%20your%20products"
+class="btn">
 Order on WhatsApp
 </a>
+
 </div>
 </section>
 
 <section class="section">
-<h2>Why Choose Vermaur</h2>
 
 <div class="features">
 
 <div class="feature">
-<h3>100% Pure</h3>
-<p>Premium quality food products.</p>
+<h2>5000+</h2>
+<p>Happy Customers</p>
 </div>
 
 <div class="feature">
-<h3>Natural Farming</h3>
-<p>Traditional and sustainable sourcing.</p>
+<h2>20+</h2>
+<p>Products</p>
 </div>
 
 <div class="feature">
+<h2>100%</h2>
+<p>Natural Quality</p>
+</div>
+
+<div class="feature">
+<h2>4.8★</h2>
+<p>Customer Rating</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Why Choose Vermaur
+</h2>
+
+<div class="features">
+
+<div class="feature">
+🌾
+<h3>Farm Fresh</h3>
+<p>Directly sourced from trusted farms.</p>
+</div>
+
+<div class="feature">
+✅
 <h3>Hygienic Packing</h3>
-<p>Carefully packed for freshness.</p>
+<p>Packed with care and safety.</p>
 </div>
 
 <div class="feature">
-<h3>Trusted Quality</h3>
-<p>Customer satisfaction is our priority.</p>
+🚚
+<h3>Pan India Delivery</h3>
+<p>Delivery available across India.</p>
+</div>
+
+<div class="feature">
+🇮🇳
+<h3>Made in India</h3>
+<p>Proudly sourced and packed in India.</p>
 </div>
 
 </div>
+
 </section>
 
 <section class="section" id="products">
 
-<h2>Our Premium Products</h2>
+<h2 class="section-title">
+Our Products
+</h2>
+
 <div class="products">
 
-  
-<div class="card">
-<img src="Premium-Dal-Badi.png">
-
-<div class="card-content">
-<h3>Premium Dal Badi</h3>
-
-<p>Vermaur Farms Premium Dal Badi, 400g | Protein-Rich Lentil Nuggets | Authentic Homemade Taste | Quick as snacks & Easy Cooking</p>
-
-<div class="price">₹550 / 400gram</div>
-
-<a href="https://wa.me/919120033340" class="btn">
-Order Now
-</a>
-
-</div>
-</div>
-
-  
 <div class="card">
 <img src="kala-namak-rice.png">
-
 <div class="card-content">
 <h3>Kala Namak Rice</h3>
 <p>Traditional aromatic rice from Eastern UP.</p>
-<div class="price">₹380 / Kg</div>
-
-<a href="https://wa.me/919120033340" class="btn">
-Order Now
-</a>
+<a href="https://wa.me/919120033340" class="btn">Order Now</a>
 </div>
 </div>
 
 <div class="card">
 <img src="sona-masoori-rice.png">
-
 <div class="card-content">
 <h3>Sona Masoori Rice</h3>
 <p>Light, fluffy and aromatic rice.</p>
-
-<div class="price">₹149 / Kg</div>
-
-<a href="https://wa.me/919120033340" class="btn">
-Order Now
-</a>
+<a href="https://wa.me/919120033340" class="btn">Order Now</a>
 </div>
 </div>
 
 <div class="card">
 <img src="doodh-malai-rice.png">
-
 <div class="card-content">
 <h3>Doodh Malai Rice</h3>
-<p>Rich, creamy and premium taste.</p>
+<p>Premium rice with rich taste.</p>
+<a href="https://wa.me/919120033340" class="btn">Order Now</a>
+</div>
+</div>
 
-<div class="price">₹179 / Kg</div>
-
-<a href="https://wa.me/919120033340" class="btn">
-Order Now
-</a>
+<div class="card">
+<img src="dal-badi.png">
+<div class="card-content">
+<h3>Premium Dal Badi</h3>
+<p>Traditional handmade dal badi.</p>
+<a href="https://wa.me/919120033340" class="btn">Order Now</a>
 </div>
 </div>
 
@@ -293,13 +139,62 @@ Order Now
 
 </section>
 
-<section class="section about" id="about">
+<section class="section" id="about">
 
-<h2>About Vermaur Farms</h2>
+<div class="about">
+
+<h2 class="section-title">
+About Vermaur Farms
+</h2>
 
 <p>
-Vermaur Farms is dedicated to bringing premium quality grains and traditional food products directly to consumers. We focus on purity, freshness, traditional taste and customer satisfaction.
+Vermaur Farms is dedicated to providing premium quality rice and traditional food products sourced directly from trusted farms. We focus on purity, nutrition, traditional taste and customer satisfaction.
 </p>
+
+<br>
+
+<p>
+FSSAI Central License: 22726749000098
+</p>
+
+<p>
+FSSAI State License: 12726066000657
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Customer Reviews
+</h2>
+
+<div class="products">
+
+<div class="card">
+<div class="card-content">
+⭐⭐⭐⭐⭐
+<p>Excellent aroma and premium quality.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content">
+⭐⭐⭐⭐⭐
+<p>Authentic traditional taste.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content">
+⭐⭐⭐⭐⭐
+<p>Great packaging and timely delivery.</p>
+</div>
+</div>
+
+</div>
 
 </section>
 
@@ -308,14 +203,20 @@ Vermaur Farms is dedicated to bringing premium quality grains and traditional fo
 <h2>Contact Us</h2>
 
 <p>📞 +91 9120033340</p>
+
+<p>📧 vermaurfarms@gmail.com</p>
+
 <p>🌐 www.vermaur.in</p>
-<p>© 2026 Vermaur Farms. All Rights Reserved.</p>
+
+<p>🚚 Pan India Delivery</p>
+
+<p>
+© 2026 Vermaur Farms. All Rights Reserved.
+</p>
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/919120033340">
-WhatsApp
+<a class="whatsapp"
+href="https://wa.me/919120033340?text=Hello%20Vermaur%20Farms,%20I%20want%20to%20know%20about%20your%20products">
+💬 WhatsApp
 </a>
-
-</body>
-</html>
